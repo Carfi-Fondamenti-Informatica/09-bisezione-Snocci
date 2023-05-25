@@ -17,18 +17,22 @@ int main() {
     }
     do {
         x=(a+b)/2;
-        if (F(x)==0) {
-            cout<<x;
-        } else {
-            if ((F(a)*F(x))<0) {
-            b=x;
+        if (F(x)==0)
+            break;
+            if((F(a)*F(x))<0) {
+                b=x;
             } else {
                 a=x;
             }
 
-        } err=(abs((a+b)/2));
-    } while(err>=pow(10,-6));
+            err=(abs((b-a)/2));
+        }
+     while(err>=pow(10,-6));
     cout<<x;
 
-   return 0;
+
+
+
+
+    return 0;
 }
