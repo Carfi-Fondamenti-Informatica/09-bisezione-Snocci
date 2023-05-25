@@ -28,6 +28,7 @@ int main() {
             err=(abs((b-a)/2));
         }
      while(err>=pow(10,-6));
+    cout.precision(4);
     cout<<x;
 
 
