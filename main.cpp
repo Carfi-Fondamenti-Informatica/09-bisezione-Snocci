@@ -28,8 +28,11 @@ int main() {
             err=(abs((b-a)/2));
         }
      while(err>=pow(10,-6));
-    cout.precision(5);
-    cout<<x;
+   x=x*10000
+    float x1= int(x);
+    float x2= x1/10000;
+    cout<<x2;
+    
 
 
 
